@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Mobile Styles */
+  @media only screen and (max-width: 400px) {
+      
+    body {
+      background-color: #F09A9D; /* Red */
+    }
+  }
+  
+  /* Tablet Styles */
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
+
+    .Header{
+        display: flex;
+        padding-top: 5px;
+        font-size: 13px;
+        font-weight: bold;
+        justify-content: space-between;
+        height : 25px;
+        background-color: rgba(204, 204, 204, 0.5);
+    
+    }
+    .Header_Time{
+        margin-left: 10px;
+    }
+    .Header_Status{
+        display: flex;
+        justify-content: space-around;
+        width: 70px;
+        margin-right: 10px;
+        color: black;
+    }
+
+    .Moblie{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 680px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border-radius: 30px;
+        background: linear-gradient( 60deg,  #d6d6d6 100px, white, white);
+    }
+    .Main_Header{
+        background-image: url(cat.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 30px;
+    }
+
+    .Main{
+        display: flex;
+        height : 200px;
+        flex-direction: column;
+        align-content: space-between;
+        justify-content: space-between;
+
+    }
+    .Main_Top{
+        display: flex;
+        height: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 25px;
+
+    }
+    .Main_Top_Right{
+        display: flex;
+        width: 100px;
+        justify-content: space-around;
+    }
+    .Main_Profile{
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+    }
+    .Main_Bottom{
+        display: flex;
+        height: 50px;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    .Product_Info{
+        display: flex;
+        width: 120px;
+        height: 45px;
+        border-radius: 30px;
+        padding-bottom: 2px;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        font-weight: 550;
+        color: #00a0b6;
+        border: 1px #00a0b6 solid;
+    }
+    .Product_Info:hover{
+        color: white;
+        border: #00a0b6;
+        background-color: #00a0b6;
+
+    }
+    .Main_Top_Icon{
+        color: #00a0b6;
+    }
+
+
+    .Content{
+        padding-top: 5px;
+        height : 300px;
+    }
+    .Content_Top{
+        display: flex;
+        height: 110px;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5px;
+        margin-bottom: 10px;
+        background-color: rgba(250, 250, 250, 0.5);
+    }
+    .Content_Top_Top{
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+
+    }
+    .Content_Top_Bottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 40px;
+    }
+    .ConTent_Top_Name{
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: auto;
+        height: 50px;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 1px;
+        color: #075971;
+    }
+    .Content_Top_Star{
+        display: flex;
+        width: 60px;
+        height: 30px;
+        margin-top: 3px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 30px;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 17px;
+        font-weight: 550;
+        color: white;
+        border: #00a0b6;
+        background-color: #00a0b6;
+    }
+    .Content_Top_Price{
+        font-size: 23px;
+    }
+    .Content_Top_Current_Price{
+        color: #00a0b6;
+        font-weight: bold;
+    }
+    .Content_Top_Original_Price{
+        font-size: 20px;
+        opacity: 0.3;
+    }
+    .Content_Top_Sale_Count{
+        font-weight: bold;
+        font-size: 13px;
+        color: #00a0b6;
+
+    }
+    .Content_Middle{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 7px;           
+        height : 90px;
+        margin-bottom: 10px;
+        background-color: rgba(250, 250, 250, 0.5);
+    }
+    .Option_Color_Top{
+        display: flex;
+        justify-content: space-between;
+    }
+    .Option_Color{
+
+        color: #00a0b6;
+        font-weight: bold;
+    }
+    .Option_Color_Clear{
+        font-size: 12px;
+        font-weight: bold;
+        color: #00a0b6;
+        border: none;
+        background-color: white;
+
+    }
+    .Option_Color_Check{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 220px;
+        height: 50px;
+    }
+    .Option_Color_Partition{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+    }
+    input[id="Color_Check_1"] + label {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-color: blue;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    input[id="Color_Check_1"]:checked + label {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        border: 8px #4884dc solid;
+    }
+    input[id="Color_Check_1"]{
+        display: none;
+    }
+    input[id="Color_Check_2"] + label {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-color: green;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    input[id="Color_Check_2"]:checked + label {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        border: 8px #69dea9 solid;
+    }
+    input[id="Color_Check_2"]{
+        display: none;
+    }
+    input[id="Color_Check_3"] + label {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-color: rgb(103, 130, 143);
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    input[id="Color_Check_3"]:checked + label {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        border: 8px rgb(120, 150, 163) solid;
+    }
+    input[id="Color_Check_3"]{
+        display: none;
+    }
+    input[id="Color_Check_4"] + label {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-color: rgb(30, 168, 168);
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    input[id="Color_Check_4"]:checked + label {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        border: 8px rgb(31, 235, 236) solid;
+    }
+    input[id="Color_Check_4"]{
+        display: none;
+    }
+    input[id="Color_Check_5"] + label {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-color: rgb(132, 87, 240);
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    input[id="Color_Check_5"]:checked + label {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        border: 8px rgb(155, 151, 250) solid;
+    }
+    input[id="Color_Check_5"]{
+        display: none;
+    }
+
+    .Content_Bottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        padding: 7px;           
+        height : 90px;
+        background-color: rgba(250, 250, 250, 0.5);
+    }
+    .Option_Size_Top{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    .Option_Size{
+
+        color: #00a0b6;
+        font-weight: bold;
+    }
+    .Option_Size_Clear{
+        font-size: 12px;
+        font-weight: bold;
+        color: #00a0b6;
+        border: none;
+        background-color: white;
+
+    }
+
+
+
+    .Main_Footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;           
+        height : 80px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .Like{
+    display: flex;
+    width: 70px;
+    height: 45px;
+    margin-top: 3px;
+    border-radius: 25px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 26px;
+    color: white;
+    border: #00a0b6;
+    background-color: #00a0b6;
+    }
+
+    .Add_Cart_Count{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 360px;
+        height: 45px;
+        border-radius: 25px;
+        padding-right: 10px;
+        padding-bottom: 4px;
+        font-size: 17px;
+        color: white;
+        background-color: #00a0b6;
+        
+    }
+    #Cart_Minus_Plus{
+        display: flex;
+        width: 140px;
+        height: 40px;
+        margin-top: 3px;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 20px;
+        font-weight: normal;
+        color: white;
+        border: #00a0b6;
+        background-color: #00a0b6;
+    }
+    .Circle{
+        display: flex;
+        width: 32px;
+        height: 32px;
+        border-radius: 16px;
+        margin-top: 2px;
+        padding-top: 1px;
+        justify-content: center;
+        background-color: white;
+
+    }
+    #Cart_Count_Minus{
+        display: flex;
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        margin-right: 1px;
+        justify-content: center;
+        align-items: center;
+        font-size: 27px;
+        color: #00a0b6;
+    
+    }
+    #Cart_Count_Plus{
+        display: flex;
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        margin-right: 1px;
+        justify-content: center;
+        align-items: center;
+        font-size: 27px;
+        color: #00a0b6;
+    
+    }
+    body {
+        
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    a:visited{
+        text-decoration: none;
+
+    }
+
+  }
+  
+  /* Desktop Styles */
+  @media only screen and (min-width: 961px) {
+    body {
+      background-color: #B2D6FF; /* Blue */
+    }
+  }
