@@ -11,6 +11,8 @@
 
 
 <body>
+    <div id = "Body_Border_Out">
+    <div id = "Body_Border_In">
     <div class = "Moblie">
 
         <div class = "Main_Header">
@@ -18,7 +20,7 @@
             <div class = "Header">
 
                 <div class = "Header_Time">
-                    <span>2:36 AM</span>
+                    <div id="clockTitle">00:00</div>
                 </div>
         
                 <div class = "Header_Status">
@@ -38,7 +40,9 @@
 
                         <div class = "Main_Top_Right">
                             <a class = "Main_Top_Icon" href=""><i class = "fas fa-shopping-cart"></i></a>
-                            <img class = "Main_Profile" src="profile.jpg" alt="">
+                            <a class = "Main_Profile" href="">
+                                <img class = "Main_Profile" src="profile.jpg" alt="">
+                            </a>
                         </div>
                     
                 </div> <!--"Main_Top" end-->
@@ -116,22 +120,28 @@
 
 
             <div class = "Main_Footer">
-                <button class = "Like"type="submit" ><i class="far fa-heart"></i></button>
+                <button class = "Like" type="submit" ><i class="far fa-heart"></i></button>
                 <div class = "Add_Cart_Count">
                     <span>Add to Cart</span>
                     <div id = "Cart_Minus_Plus">
                         <div class = "Circle">
-                        <button id = "Cart_Count_Minus" type="" ><i class="fas fa-minus-circle"></i></button>
+                        <button id = "Cart_Count_Minus"><i class="fas fa-minus-circle"></i></button>
                         </div>
                         <span id = "productCount">0</span>
                         <div class = "Circle">
-                        <button id = "Cart_Count_Plus"type="" ><i class="fas fa-plus-circle"></i></button>
+                        <button id = "Cart_Count_Plus"><i class="fas fa-plus-circle"></i></button>
                         </div>
                     </div>    
                </div>
             </div> <!--"Main_Footer" end-->
+            <div>
 
+            </div>
     </div> <!--"Moblie" end-->
+
+    </div> <!--"Body_Border_In" end--> 
+
+    </div> <!--"Body_Border_Out" end-->
 
     <script src="script.js"></script>
 </body>
